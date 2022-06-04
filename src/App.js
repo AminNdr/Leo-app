@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState , useEffect } from "react";
+import "./App.css";
+import Layout from "./Components/Shared/Layout";
+import Context from "./Context/Context";
 
 function App() {
+
+  const [list,setList] = useState([]);
+
+  const getLocalList = () => {
+    let localData = localStorage.getItem("list");
+    if (localData != null) {
+      setList(JSON.parse(localStorage.getItem("list")));
+    }
+  };
+
+
+  useEffect(() => {
+    getLocalList();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Context.Provider value={[list , setList ]}>
+        <Layout />
+      </Context.Provider>
     </div>
   );
 }

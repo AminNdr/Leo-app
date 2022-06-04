@@ -1,0 +1,6 @@
+.turnspage__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto 0 auto;
+
+}

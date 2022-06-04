@@ -1,0 +1,5 @@
+.Layout__container{
+    background: linear-gradient(90deg, #334D50 0%, #CBCAA5 100%);
+    min-height: 100vh;
+    padding: 50px;
+}

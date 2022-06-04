@@ -1,0 +1,27 @@
+.listItem__container{
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    align-items: center;
+    min-height: 50px;
+    border-bottom: 1px solid #EAE2E2;
+}
+.listItem__name{
+    width: 250px;
+}
+.listItem__name img{
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.listItem__service{
+    width: 200px;
+    text-align: right;
+}
+.listItem__phone{
+    min-width: 200px;
+    text-align: right;
+}
+
+.listItem__icons img:first-child{
+    margin-left: 10px;
+}

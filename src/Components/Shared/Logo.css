@@ -1,0 +1,16 @@
+.logo__container{
+    width: 79px;
+    height: 79px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 15px;
+    background-image: url(../../../public/assets/images/logo.png);
+   background-repeat: no-repeat;
+   background-position: center bottom+15px;
+}
+.logo__container span{
+    font-weight: 800;
+}

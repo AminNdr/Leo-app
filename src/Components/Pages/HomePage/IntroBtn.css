@@ -1,0 +1,26 @@
+.introbtn__container{
+    background-color: #fff;
+    border-radius: 30px;
+    width: 406px;
+    height: 225px;
+    position: relative;
+}
+.introbtn__img{
+    margin-top: -50px;
+    margin-right: -100px;
+    display: inline-block;
+    vertical-align: middle;
+    
+    
+}
+
+.introbtn__container span{
+    position: absolute;
+    top:calc(100% - 122px);
+    right: calc(100% - 150px);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+

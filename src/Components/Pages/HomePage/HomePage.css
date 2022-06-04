@@ -1,0 +1,6 @@
+.mainnav__container{
+    margin-top: 290px;
+    display: flex;
+
+    justify-content: space-evenly;
+}
